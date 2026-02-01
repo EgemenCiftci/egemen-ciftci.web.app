@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egemen Çiftci | Principal Fullstack Engineer</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --muted: #666666;
+            --accent: #0066cc;
+            --border: #eeeeee;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: var(--muted);
+            margin-bottom: 24px;
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+
+        .job {
+            margin-bottom: 32px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .company {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        ul {
+            padding-left: 18px;
+            margin-top: 8px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .stack-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stack-item strong {
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .stack-item span {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+
+            .stack-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Egemen Çiftci</h1>
+            <div class="title">Principal Fullstack Engineer</div>
+            <p>Over 15 years of experience architecting and building high-scale systems. Specialized in the .NET
+                ecosystem, cloud infrastructure, and modern frontend frameworks.</p>
+            <p>
+                <a href="mailto:egemenciftci@gmail.com">Email</a> &nbsp;•&nbsp;
+                <a href="https://github.com/EgemenCiftci">GitHub</a> &nbsp;•&nbsp;
+                <a href="https://linkedin.com/in/egemen-çiftci-2352b731/">LinkedIn</a>
+            </p>
+        </header>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Principal Software Engineer</span>
+                    <span class="date">2022 — Present</span>
+                </div>
+                <div class="company">DXC Technology (Client: A hedge fund)</div>
+                <ul>
+                    <li>Architecting an enterprise **Portfolio Simulation and What-If Analysis** engine, enabling
+                        Portfolio Managers to model complex investment scenarios and stress-test market impacts in
+                        real-time.</li>
+                    <li>Engineering a high-resolution platform that allows PMs to apply dynamic ticker weighting and
+                        granular filtering across multi-asset class portfolios.</li>
+                    <li>Building mission-critical decision support tools to enhance capital allocation strategies for a
+                        firm managing $37B+ in AUM.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Senior Software Engineer</span>
+                    <span class="date">2022 — 2025</span>
+                </div>
+                <div class="company">DXC Technology (Client: Capital Group)</div>
+                <ul>
+                    <li>Spearheaded the **Cloud Transformation** of a mission-critical Fund Management application,
+                        migrating monolithic on-premise services to a scalable, resilient cloud-native architecture.
+                    </li>
+                    <li>Architected the modernization of multiple **Legacy Reporting Applications**, replacing outdated
+                        systems with high-performance engines capable of delivering real-time financial insights and
+                        regulatory compliance.</li>
+                    <li>Collaborated with global stakeholders to ensure zero-downtime transitions during large-scale
+                        system refactoring and data migrations.</li>
+                    <li>Optimized system performance and reliability, ensuring the technology stack could support the
+                        rigorous demands of institutional fund management operations.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Senior Software Engineer</span>
+                    <span class="date">2017 — 2022</span>
+                </div>
+                <div class="company">ICRON</div>
+                <ul>
+                    <li>Architected and developed next-generation features for the ICRON platform, providing real-time
+                        decision-support and optimization engines for global supply chain operations.</li>
+                    <li>Engineered high-performance **data visualization components** for complex datasets, utilizing
+                        WPF for desktop and Angular/JavaScript for web to enable "high-resolution" analytical insights.
+                    </li>
+                    <li>Led multi-platform development initiatives, ensuring seamless feature parity and performance
+                        across Windows desktop and modern browser environments.</li>
+                    <li>Collaborated with R&D teams to integrate emerging optimization tools and developed a library of
+                        reusable UI modules that standardized the look and feel of analytics dashboards.</li>
+                    <li>Optimized application responsiveness for large-scale data handling, significantly reducing
+                        latency in interactive views and complex grid operations.</li>
+                    <li>Mentored junior engineers and championed Agile best practices, including rigorous peer code
+                        reviews and sprint estimation accuracy.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Software Development Manager</span>
+                    <span class="date">2014 — 2017</span>
+                </div>
+                <div class="company">Aktif Bank</div>
+                <ul>
+                    <li>Architected and delivered a self-service **FinTech Kiosk platform** (WPF), enabling independent
+                        financial transactions and secure 24/7 banking operations across multiple locations.</li>
+                    <li>Engineered a custom **Code Generation Engine** for web services that reduced backend
+                        implementation time by 90%, significantly accelerating the bank’s digital transformation
+                        roadmap.</li>
+                    <li>Implemented high-concurrency integrations with third-party providers (Banks, Utilities,
+                        Telecom), ensuring real-time transactional accuracy and fault tolerance under high-volume loads.
+                    </li>
+                    <li>Enforced rigorous **PCI compliance** and data encryption standards across all payment gateways
+                        to ensure the highest level of customer data security.</li>
+                    <li>Managed the full product lifecycle, from UI/UX design for touch-screen workflows to providing L3
+                        production support for complex hardware-software interaction issues.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Software Engineer</span>
+                    <span class="date">2010 — 2014</span>
+                </div>
+                <div class="company">Various R&D Companies</div>
+                <ul>
+                    <li>Developed real-time **Computer Vision** pipelines for automated face and license plate
+                        recognition using OCR and object tracking algorithms.</li>
+                    <li>Built industrial logistics optimization engines (Cycles/Optimo) using C# and the Task Parallel
+                        Library (TPL) for efficient route planning.</li>
+                    <li>Integrated specialized hardware via **RS-232 serial communication** and Windows Embedded
+                        platforms for product verification systems.</li>
+                    <li>Optimized complex SQL queries and developed reporting modules for enterprise student information
+                        systems (K12NET).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="stack">
+            <h2>Technical Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-item">
+                    <strong>Backend</strong>
+                    <span>C#, .NET Core, Web API, gRPC, Node.js</span>
+                </div>
+                <div class="stack-item">
+                    <strong>Frontend</strong>
+                    <span>Angular, WPF, MAUI, Blazor</span>
+                </div>
+                <div class="stack-item">
+                    <strong>Data & Cloud</strong>
+                    <span>SQL Server, EF Core, AWS/Azure, Docker</span>
+                </div>
+                <div class="stack-item">
+                    <strong>Architecture</strong>
+                    <span>Microservices, MVVM, Clean Architecture, TDD</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Kraków, Poland • Egemen Çiftci &copy; 2026
+        </footer>
+    </div>
+
+</body>
+
+</html>
