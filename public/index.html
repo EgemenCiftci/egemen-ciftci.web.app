@@ -137,20 +137,36 @@
             }
         }
     </style>
+    <script>
+        function calculateExperience() {
+            const startYear = 2010;
+            const currentYear = new Date().getFullYear();
+            return currentYear - startYear;
+        }
+
+        function updateCurrentYear() {
+            document.getElementById('year').textContent = new Date().getFullYear();
+        }
+
+        function initializePage() {
+            document.getElementById('years').textContent = calculateExperience();
+            updateCurrentYear();
+        }
+    </script>
 </head>
 
-<body>
+<body onload="initializePage()">
 
     <div class="container">
         <header>
             <h1>Egemen Çiftci</h1>
             <div class="title">Principal Fullstack Engineer</div>
-            <p>Over 15 years of experience architecting and building high-scale systems. Specialized in the .NET
+            <p>Over <span id="years">15</span> years of experience architecting and building high-scale systems.
+                Specialized in the .NET
                 ecosystem, cloud infrastructure, and modern frontend frameworks.</p>
             <p>
-                <a href="mailto:egemenciftci@gmail.com">Email</a> &nbsp;•&nbsp;
-                <a href="https://github.com/EgemenCiftci">GitHub</a> &nbsp;•&nbsp;
-                <a href="https://linkedin.com/in/egemen-çiftci-2352b731/">LinkedIn</a>
+                <a href="https://linkedin.com/in/egemen-çiftci-2352b731/">LinkedIn</a> &nbsp;•&nbsp;
+                <a href="https://github.com/EgemenCiftci">GitHub</a>
             </p>
         </header>
 
@@ -281,7 +297,7 @@
         </section>
 
         <footer>
-            Kraków, Poland • Egemen Çiftci &copy; 2026
+            Kraków, Poland • Egemen Çiftci &copy; <span id="year"></span>
         </footer>
     </div>
 
